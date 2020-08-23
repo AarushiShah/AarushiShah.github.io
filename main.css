@@ -601,8 +601,9 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 768px){
     body {
-        background: url("images/iphonebg.jpeg") no-repeat center fixed;
+        background: url("images/iphonebg.png") no-repeat center fixed;
         background-size: cover; 
+
     }
 
     .landing-text h1 {
@@ -714,7 +715,7 @@ input[type="submit"]:hover {
     }
 
     .timeline .date::before {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
 
     form {
