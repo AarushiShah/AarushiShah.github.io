@@ -1,0 +1,177 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Humanoid Control Design</title>
+    <link rel="stylesheet" href="research.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <meta>
+</head>
+<body>
+      <div class="wrapper">
+
+            <header>
+                  <h1 class="anim">Humanoid Control Design</h1>
+                  <p class="anim">As part of the Early Research Scholars Program, I researched the simulation-to-real transfer problem that occurs when designing control methods for bipedal robot walking. I worked under <a href="https://scungao.github.io/">Professor Sicun Gao</a>. You can view the poster presentation here. </p>
+            </header>
+
+            <video width="600" height="600" controls>
+                <source src="images/ersp.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+
+            <div class="work">
+                  <img class="anim" src="project1.jpg" alt="project img">
+                  <img class="anim" src="project2.jpg" alt="project img">
+                  <img class="anim" src="project3.jpg" alt="project img">
+                  <img class="anim" src="project4.jpg" alt="project img">
+            </div>
+
+            <div class="header2">
+                  <h1 class="anim">Other Projects</h1>
+                  <p class="anim">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus sit necessitatibus, eos minima odio, ea ipsam, dicta nihil praesentium soluta fugit aspernatur nisi enim libero quos omnis? Optio suscipit quibusdam incidunt maiores repudiandae laudantium eaque, obcaecati totam architecto aut ab?</p>
+            </div>
+
+            <div class="work2">
+
+                  <img class="anim" src="project5.jpg" alt="project img">
+                  <img class="anim" src="project6.jpg" alt="project img">
+            </div>
+
+            <footer>
+                  <p>Aarushi Shah | 2020</p>
+            </footer>
+      </div>
+      <script type="text/javascript">
+            window.sr = ScrollReveal();
+            sr.reveal('.anim');
+      </script>
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<title>Humanoid Control Design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('images/robot.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("/w3images/parallax2.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("/w3images/parallax3.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+.header {
+      font-weight: bold;
+      font-size: 120%;
+}
+.button2 {
+      margin-left: 1rem;
+}
+     
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+
+  video {
+        max-width: 100%;
+        height: auto;
+  }
+}
+</style>
+<body>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BIPEDAL <span class="w3-hide-small">CONTROL</span> DESIGN</span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT THIS PROJECT</h3>
+  <div class="w3-row">
+      <div class="w3-col m12 w3-center w3-padding-large">
+        <img src="images/poster.png" class="w3-round w3-image" alt="Photo of Me" width="1000" height="1000">
+      </div>
+  <p class="w3-center header">Introduction</p>
+  <p>Today, many researchers use reinforcement learning to train robots to walk in simulation before transferring the learning algorithm to a real life robot. This process is beneficial as it saves damaging hardware and allows for greater data analysis. The idea is to first train using RL in simulation, where we can perform several trials and collect additional data as much as is necessary to find the control function. Once the control function is obtained, which allows for stability in the robot, that function is transferred
+      over to the physical robot to achieve similar results.</p>
+      <p class="w3-center header">Problem</p>
+      <p>However, many simulations do not accurately represent the physical robot, which poses problems when it comes time to transfer the control function. When important features such as friction, mass, and density are not accurately modeled in simulation, the gap in performance between simulated and  
+            real environments is large. Control functions that work in simulation may not work in the real-life counterpart, and the robot may lose it's stability. This discrepancy can cause issues in mission-critical applications or even damage expensive hardware. </p>
+  <div class="w3-center"><iframe src="https://giphy.com/embed/h4aXoQyfPTPGDe6xRr" width="400" height="200" frameBorder="0" class="w3-center giphy-embed gif" allowFullScreen></iframe>
+      <p>Example of successful simulation to real transfer</p>
+</div>
+      <p class="w3-center header">Contributions</p>
+      <p>My contributions to this research area were the following: </p>
+      <ul>
+            <li>Researched the effect of reversing the simulation process. Instead of creating a simulation based on a specific type of robot and risking accuracy, I researched the effect of creating a generic simulation that can then be 3D printed into a real robot.</li>
+            <li>Created a simulation environment for a small bipedal robot, and used reinforcement learning algorithms to teach the robot to walk.</li>
+            <li>Designed reward functions to be implemented into the RL algorithms.</li>
+      </ul>
+      
+      <a class="w3-center" href="images/Proposal.pdf" download="">
+            <button class="w3-center w3-button w3-padding-large w3-light-grey">Download Project Proposal</button>
+        </a>
+        <a class="w3-center button2" href="https://drive.google.com/drive/folders/1HW2H4nNXWWvM304gwfEhB4EtpABfwPLU?usp=sharing">
+            <button class="w3-center w3-button w3-padding-large w3-light-grey">Download Simulation</button>
+        </a>
+    <video width="1000" height="1000" controls class="w3-center">
+      <source src="images/ersp.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m12 w3-hide-small ">
+      <p>This research project was conducted as part of Professor Sicun Gao's Lab and was made possible by the Early Research Scholar's Program at UCSD. </p>
+    </div>
+    
+  </div>
+</div>
+
+
+</body>
+</html>
