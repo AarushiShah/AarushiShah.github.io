@@ -106,6 +106,10 @@ body, html {
 .button2 {
       margin-left: 1rem;
 }
+
+.website {
+    width: 100%;
+}
      
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
@@ -152,13 +156,16 @@ body, html {
             <li>Created a simulation environment for a small bipedal robot, and used reinforcement learning algorithms to teach the robot to walk.</li>
             <li>Designed reward functions to be implemented into the RL algorithms.</li>
       </ul>
-      
-      <a class="w3-center" href="images/Proposal.pdf" download="">
-            <button class="w3-center w3-button w3-padding-large w3-light-grey">Download Project Proposal</button>
-        </a>
-        <a class="w3-center button2" href="https://drive.google.com/drive/folders/1HW2H4nNXWWvM304gwfEhB4EtpABfwPLU?usp=sharing">
-            <button class="w3-center w3-button w3-padding-large w3-light-grey">Download Simulation</button>
-        </a>
+        <div class="w3-center">
+          <a class="w3-center w3-button w3-light-grey website" href="images/Proposal.pdf" download="">
+              Download Project Proposal 
+          </a>
+      </div>
+      <div class="w3-center" style="margin-top: 2rem;">
+          <a class="w3-center w3-button w3-light-grey website" href="https://drive.google.com/drive/folders/1HW2H4nNXWWvM304gwfEhB4EtpABfwPLU?usp=sharing">
+              Download Simulation
+          </a>
+      </div>
     <video width="1000" height="1000" controls class="w3-center">
       <source src="images/ersp.mp4" type="video/mp4">
     Your browser does not support the video tag.
